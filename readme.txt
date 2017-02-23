@@ -4,7 +4,7 @@ Donate link: http://surbma.com/
 Tags: SalesAutopilot, shortcode, form, CRM
 Requires at least: 3.0
 Tested up to: 4.7
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,9 @@ A simple shortcode to include SalesAutopilot forms into WordPress.
 
 A simple shortcode to include SalesAutopilot forms into WordPress. This is a very useful plugin if your users don't have permission to embed javascript in the content or you just want to use a more simple way to embed the forms wherever you want.
 
-The shortcode: `[sa-form listid="THIS_IS_THE_LISTID" formid="THIS_IS_THE_FORMID"]`
+**The shortcode:**
+
+`[sa-form listid="THIS_IS_THE_LISTID" formid="THIS_IS_THE_FORMID"]`
 
 Where listid is the SalesAutopilot's list ID and formid is the form's ID, that you want to display.
 
@@ -41,6 +43,10 @@ There is no option to customize it via the shortcode. You can control the look o
 It is the reverse version of my last name. ;)
 
 == Changelog ==
+
+= 1.1.1 =
+
+Fixed description.
 
 = 1.1.0 =
 

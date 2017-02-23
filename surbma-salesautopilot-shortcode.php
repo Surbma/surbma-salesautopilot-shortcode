@@ -5,7 +5,7 @@ Plugin Name: Surbma - SalesAutopilot Shortcode
 Plugin URI: http://surbma.com/wordpress-plugins/
 Description: A simple shortcode to include SalesAutopilot forms into WordPress.
 
-Version: 1.1.0
+Version: 1.1.1
 
 Author: Surbma
 Author URI: http://surbma.com/
