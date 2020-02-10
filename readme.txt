@@ -1,10 +1,11 @@
-=== Surbma - SalesAutopilot Shortcode ===
-Contributors: Surbma
-Donate link: http://surbma.com/
+=== Surbma | SalesAutopilot Shortcode ===
+Contributors: Surbma, CherryPickStudios
+Donate link: https://surbma.com/donate/
 Tags: SalesAutopilot, shortcode, form, CRM
-Requires at least: 3.0
-Tested up to: 4.7
-Stable tag: 1.1.1
+Requires at least: 5.1
+Tested up to: 5.3
+Stable tag: 2.0
+Requires PHP: 7.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,7 +26,7 @@ You can find these IDs in your SalesAutopilot admin area, when you select a form
 == Installation ==
 
 1. Upload `surbma-salesautopilot-shortcode` folder to the `/wp-content/plugins/` directory
-2. Activate the Surbma - SalesAutopilot Shortcode plugin through the 'Plugins' menu in WordPress
+2. Activate the Surbma | SalesAutopilot Shortcode plugin through the 'Plugins' menu in WordPress
 3. That's it. Now you can use the shortcode. :)
 
 == Frequently Asked Questions ==
@@ -43,6 +44,13 @@ There is no option to customize it via the shortcode. You can control the look o
 It is the reverse version of my last name. ;)
 
 == Changelog ==
+
+= 2.0 =
+
+Release date: 2020-02-10
+
+- TWEAK - Tested with WordPress 5.3 version.
+- TWEAK - Updated to use a new way to deploy it to wp.org repo.
 
 = 1.1.1 =
 
