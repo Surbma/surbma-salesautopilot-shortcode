@@ -5,7 +5,7 @@ Plugin Name: Surbma | SalesAutopilot Shortcode
 Plugin URI: https://surbma.com/wordpress-plugins/
 Description: A simple shortcode to include SalesAutopilot forms into WordPress.
 
-Version: 2.0
+Version: 2.1
 
 Author: Surbma
 Author URI: https://surbma.com/
@@ -16,21 +16,19 @@ Text Domain: surbma-salesautopilot-shortcode
 Domain Path: /languages/
 */
 
-// Prevent direct access to the plugin
-if ( !defined( 'ABSPATH' ) ) exit( 'Good try! :)' );
+// Prevent direct access
+defined( 'ABSPATH' ) || die;
 
 // Localization
-function surbma_salesautopilot_shortcode_init() {
+add_action( 'init', function() {
 	load_plugin_textdomain( 'surbma-salesautopilot-shortcode', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-}
-add_action( 'plugins_loaded', 'surbma_salesautopilot_shortcode_init' );
+} );
 
-function surbma_salesautopilot_shortcode_shortcode( $atts ) {
+add_shortcode( 'sa-form', function( $atts ) {
 	extract( shortcode_atts( array(
 		"listid" => '',
 		"formid" => '',
 		"width" => '100%'
 	), $atts ) );
-	return '<div style="width: '.$width.';"><script type="text/javascript" src="https://d1ursyhqs5x9h1.cloudfront.net/sw/scripts/embed-iframe-form.js?listId='.$listid.'&formId='.$formid.'"></script></div>';
-}
-add_shortcode( 'sa-form', 'surbma_salesautopilot_shortcode_shortcode' );
+	return '<div style="width: ' . esc_attr( $width ) . ';"><script type="text/javascript" src="https://d1ursyhqs5x9h1.cloudfront.net/sw/scripts/embed-iframe-form.js?listId=' . urlencode( $listid ) . '&formId=' . urlencode( $formid ) . '"></script></div>';
+} );
