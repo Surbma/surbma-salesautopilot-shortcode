@@ -4,7 +4,7 @@ Donate link: https://surbma.com/donate/
 Tags: SalesAutopilot, shortcode, form, CRM
 Requires at least: 5.1
 Tested up to: 6.7
-Stable tag: 2.1
+Stable tag: 2.2
 Requires PHP: 7.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -44,6 +44,12 @@ There is no option to customize it via the shortcode. You can control the look o
 It is the reverse version of my last name. ;)
 
 == Changelog ==
+
+= 2.2 =
+
+Release date: 2024-12-28
+
+- ENHANCED - Using `rawurlencode()` instead of `urlencode()` to ensure URLs are correctly encoded.
 
 = 2.1 =
 
